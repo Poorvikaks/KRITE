@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div>
+        <nav class="navbar">
+            <div class="lefttop">
+                <div> <img src="Images/black.jpg" alt="picc" class="picc"></div>
+                <div> <span>INC</span>
+                    <p>innovate hub</p>
+                </div>
+                <div> <img src="Images/pic.avif" alt="" class="picc"></div>
+            </div>
+            <div class="nav-left">products</div>
+            <div class="searchbar"><i class="fa fa-search" aria-hidden="true"></i><input type="search" name=""
+                    class="sear" placeholder="search for"></div>
+            <div class="setting"><i class="fa fa-comments-o" aria-hidden="true"></i></div>
+            <div class=" setting"><i class="fa fa-cog" aria-hidden="true"></i>
+            </div>
+        </nav>
+    </div>
+    <!-- <-------------------------------------side bar------------------------->
+    <div class=" sidebar">
+        <div class="bar1">
+            <div class="three">
+                <div class="design"> <i class="fa fa-link" aria-hidden="true"></i>
+                    <a href="" class="space">
+                        Design Team
+                    </a>
+                </div>
+
+                <div class="market">
+                    <i class="fa fa-volume-up" aria-hidden="true"></i><a href="">
+                        <p class="space">marketing Team</p>
+                    </a>
+                </div>
+
+                <div class="devops"> <i class="fa fa-snowflake-o" aria-hidden="true"></i><a href="">
+                        <p class="space">development Team</p>
+                    </a></div>
+            </div>
+            <div class="create">
+                <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                <button>Create Album</button>
+            </div>
+            <div class="folder">
+                <a href="">FOLDRES</a>
+                <div class="plus">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <ul>
+                <li onclick="plist()">
+                    <div class="marketing"><i class="fa fa-file-o" aria-hidden="true"></i>
+                        <p class="space">Products</p>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div id="products"></div>
+                </li>
+
+                <li onclick="slist()">
+                    <div class="market"><i class="fa fa-file-o" aria-hidden="true"></i>
+                        <p class="space">Sales</p>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div id="sales"></div>
+                </li>
+                <li>
+                    <div class="folder">
+
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        <a href="" class="space">Design</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="office">
+
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        <a href="" class="space">Office</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="office">
+
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        <a href="" class="space">Legal</a>
+                    </div>
+                </li>
+            </ul>
+
+
+
+            <div class="folder">
+
+                <i class="fa fa-address-book-o" aria-hidden="true"></i>
+                <a href="" class="space">Invite Teammates</a>
+            </div>
+            <div class="folder">
+
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                <a href="" class="space">Help and firststeps</a>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- --------------------table starts-------------------------->
+    <div class="center">
+        <header>
+            <ul class="toptable">
+                <li  onclick="sales()" >
+                    <div class="brand">
+                        <button>All brands</button>
+                        <i class="fa fa-caret-down" aria-hidden="true" ></i>
+                    </div>
+                    <div id="looop"></div>
+                </li>
+                <li>
+                    <div class="brand desk">
+                        <button>Desk</button>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="brand desk">
+                        <button>Tags</button>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="brand desk">
+                        <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
+                        <button>Sort</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="brand desk">
+                        <i class="fa fa-filter" aria-hidden="true"></i>
+                        <button>Filter</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="brand expo">
+                        <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                        <button>Meeting</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="brand desk ">
+                        <i class="fa fa-database" aria-hidden="true"></i>
+                        <button>import/export</button>
+                    </div>
+                </li>
+            </ul>
+        </header>
+        <hr>
+        <table border rules="all" class="tabcontent">
+            <tr>
+                <th></th>
+                <th>Brand</th>
+                <th>description</th>
+                <th>Members</th>
+
+                <th>Categories</th>
+                <th>Tag</th>
+                <th>Next Meeting</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></td>
+                <td class="tabflex"><img src="Images/wix.png" alt="" class="tabpic">
+                    <p>WIX</p>
+                </td>
+                <td>
+                    <p>develop a persona...</p>
+                </td>
+                <td>
+                    <p>develop a persona...</p>
+                </td>
+                <td><button>Automation</button></td>
+                <td><button>#digital</button></td>
+                <td><button>in 30 mins</button></td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></td>
+                <td class="tabflex"><img src="Images/shopify.png" alt="" class="tabpic">
+                    <p>Shopify</p>
+                </td>
+                <td>
+                    <p>Introduce a cloud based...</p>
+                </td>
+                <td>
+                    <p>develop a persona...</p>
+                </td>
+                <td><button>Automation</button></td>
+                <td><button>#digital</button></td>
+                <td><button>tommorow</button></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></td>
+                <td class="tabflex"><img src="Images/paypal.jpg" alt="" class="tabpic">
+                    <p>Paypal</p>
+                </td>
+                <td>
+                    <p>develop a mobile...</p>
+                </td>
+                <td>
+                    <p>develop a persona...</p>
+                </td>
+                <td><button>Automation</button></td>
+                <td><button>#digital</button></td>
+                <td><button>tommorow</button></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></td>
+                <td class="tabflex"><img src="Images/disney.png" alt="" class="tabpic">
+                    <p>Disney</p>
+                </td>
+                <td>
+                    <p>this app could .......</p>
+                </td>
+                <td>
+                    <p>develop a persona...</p>
+                </td>
+                <td><button>Automation</button></td>
+                <td><button>#digital</button></td>
+                <td><button>in 6hours</button></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></td>
+                <td class="tabflex"><img src="Images/intercom.png" alt="" class="tabpic">
+                    <p>Intercom</p>
+                </td>
+                <td>
+                    <p>Introduce B2B solution...</p>
+                </td>
+                <td>
+                    <p>develop a persona...</p>
+                </td>
+                <td><button>Automation</button></td>
+                <td><button>#digital</button></td>
+                <td><button>no contact</button></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></td>
+                <td class="tabflex"><img src="Images/google.png" alt="" class="tabpic">
+                    <p>Google</p>
+                </td>
+                <td>
+                    <p>implement AI-driven...</p>
+                </td>
+                <td>
+                    <p>develop a persona...</p>
+                </td>
+                <td><button>Automation</button></td>
+                <td><button>#digital</button></td>
+                <td><button>in 1hour</button></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></td>
+                <td class="tabflex"><img src="Images/evntorn.png" alt="" class="tabpic">
+                    <p>Evntorn</p>
+                </td>
+                <td>
+                    <p>offer a comprehensive...</p>
+                </td>
+                <td>
+                    <p>develop a persona...</p>
+                </td>
+                <td><button>Automation</button></td>
+                <td><button>#digital</button></td>
+                <td><button>in 30 minutes</button></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></td>
+                <td class="tabflex"><img src="Images/microsoft.png" alt="" class="tabpic">
+                    <p>Microsoft</p>
+                </td>
+                <td>
+                    <p>the team would analyze...</p>
+                </td>
+                <td>
+                    <p>develop a persona...</p>
+                </td>
+                <td><button>Automation</button></td>
+                <td><button>#digital</button></td>
+                <td><button>next month</button></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></td>
+                <td class="tabflex"><img src="Images/invision.png" alt="" class="tabpic">
+                    <p>Invision</p>
+                </td>
+                <td>
+                    <p>this could include smart..</p>
+                </td>
+                <td>
+                    <p>develop a persona...</p>
+                </td>
+                <td><button>Automation</button></td>
+                <td><button>#digital</button></td>
+                <td><button>no contact</button></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></td>
+                <td class="tabflex"><img src="Images/paypal.jpg" alt="" class="tabpic">
+                    <p>Shopify</p>
+                </td>
+                <td>
+                    <p>launch an advisory service..</p>
+                </td>
+                <td>
+                    <p>develop a persona...</p>
+                </td>
+                <td><button>Automation</button></td>
+                <td><button>#digital</button></td>
+                <td><button>next month</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

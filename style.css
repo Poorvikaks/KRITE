@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+image {
+    cursor: pointer;
+}
+li{
+    text-decoration: none;
+    list-style-type: none;
+}
+/* --------------navbar---------------------------- */
+
+
+.navbar {
+    /* border: 2px solid red; */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.lefttop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     margin-right: 700px;
+}
+
+.picc {
+    width: 40px;
+    height: 40px;
+}
+
+.searchbar {
+    border: 2px solid rgb(78, 78, 78);
+    height: 25px;
+    border-radius: 5px;
+    color: rgb(78, 78, 78);
+}
+
+.sear {
+    border: none;
+}
+.setting{
+    border: 2px solid lightgray;
+    width: 25px;
+    height: 20px;
+    border-radius: 6px;
+}
+/* -------------------sidebar---------------- */
+.sidebar {
+    border: 2px solid lightgray;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-left: 2%;
+    padding-top: 80px;
+}
+
+.bar1 a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+.design{
+    display: flex;
+}
+.market{
+    display: flex;
+}
+.marketing{
+    margin-top: 5px;
+    display:  flex;
+}
+.plus{
+    margin-left: 70px;
+}
+.devops{
+    display: flex;
+}
+.space{
+    
+    margin-left: 9px;
+}
+.create {
+    display: flex;
+    border: 2px solid lightgray;
+    /* justify-content: space-evenly; */
+}
+.create button{
+    margin-left: 9px;
+    border: none;
+}
+.folder{
+    margin-top: 10px;
+    display: flex;
+}
+.file{
+    display:  flex;
+}
+.office{
+    
+    /* margin-top: 10px; */
+    display: flex;
+}
+.three{
+    height: 100px;
+    /* border: 2px solid black; */
+}
+/* -------------------table header------------------ */
+.center{
+    border: 2px solid lightgray;
+    height: 580px;
+    margin-left: 250px;
+}
+.toptable{
+    display: flex;
+    align-items: center;
+}
+.meet{
+    margin-left: 600px;
+}
+.brand{
+    border: 2px solid lightgray;
+    border-radius: 4px;
+    margin-left: 20px;
+    padding: 3px;
+}
+.brand button{
+   border: none;
+}
+.desk{margin-left: 30px;
+}
+.expo{
+    margin-left: 450px;
+}
+.tabcontent{
+    margin-left: 25px;
+    width: 990px;
+    margin-top: 20px;
+    padding: 20px;
+    height: 400px;
+}
+.tabpic{
+    width: 25px;
+    height: 25px;
+}
+.tabflex{
+    display: flex;
+}
+hr{
+    padding: 10px;
+}
